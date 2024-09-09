@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -6,6 +7,10 @@ body {
 =======
 * {
 >>>>>>> 8bcd2c943bc5de3e4ec8361bd20da8978e40b777
+=======
+body {
+    font-family: Arial, sans-serif;
+>>>>>>> parent of d555d51 (2)
     margin: 0;
     padding: 0;
 }
@@ -59,7 +64,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .image-container {
@@ -139,64 +144,31 @@ nav ul li a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .events {
 =======
 /*.events, .history {
 >>>>>>> 8bcd2c943bc5de3e4ec8361bd20da8978e40b777
+=======
+.events, .history {
+>>>>>>> parent of d555d51 (2)
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.event-card {
-    position: relative;
-    margin: 10px;
-    text-align: center;
-    width: auto;
-}
-
-.event-card img {
-    width: 417px;
-    height: 354px;
-    border-radius: 10px;
-}
-
-.event-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, white 30%, transparent);
-    color: black;
-    padding: 30px;
-    border-radius: 0 0 10px 10px;
-}
-
-.event-text h3 {
-    margin: 0;
-    font-weight: 500;
-    font-size: 21.48px;
-    text-align: left;
-}
-
-.history {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.history-item {
+.event-card, .history-item {
     margin: 10px;
     text-align: center;
 }
 
-.history-item img {
+.event-card img, .history-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.history-item p {
+.event-card h3, .history-item p {
     margin-top: 10px;
     font-size: 1.2em;
 }*/

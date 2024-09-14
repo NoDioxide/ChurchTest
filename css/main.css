@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Poppins', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
     color: #000;
     font-size: 16px;
+    width: 100vw;
     /*box-sizing: border-box;*/
 }
 
@@ -29,6 +32,9 @@ body {
 /*header .logo {
 
 }*/
+/*
+calc(250px + (500 - 250) * ((100vw - 500px) / (1920 - 500)));
+*/
 
 .header_1 {
     padding-top: 4px;
@@ -99,7 +105,6 @@ nav ul li a {
     transform: translate(-10%, 20%); /* Сдвиг для точного позиционирования */
 }
 
-
 .hero {
     position: relative;
     text-align: center;
@@ -129,6 +134,54 @@ nav ul li a {
 .hero p {
     margin-top: 10px;
     font-size: 1.2em;
+}
+
+/* Блок с новостном лентой */
+
+.events {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.event-card {
+    position: relative;
+    /*margin-top: 50px;
+    margin-right: 40px;*/
+    /*margin: auto;*/
+    margin-top: 30px;
+    text-align: center;
+    width: calc(250px + (500 - 250) * ((100vw - 500px) / (1920 - 500)));;;
+}
+
+.event-card img {
+    /*width: 417px;
+    height: 354px;*/
+    width: calc(200px + (417 - 217) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(200px + (354 - 254) * ((100vw - 500px) / (1920 - 500)));
+    border-radius: 15px;
+    display: block;
+}
+
+.event-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    width: calc(200px + (417 - 217) * ((100vw - 500px) / (1920 - 500)));
+    /*padding: 30px;*/
+    background: linear-gradient(to top, rgba(255,228,228) 20%, transparent 100%);
+    /*background: white;*/
+}
+
+.event-text h3 {
+    font-weight: 500;
+    font-size: calc(10px + (20 - 5) * ((100vw - 500px) / (1920 - 500)));
+    margin: calc(5px + (20 - 5) * ((100vw - 500px) / (1920 - 500)));;
+    padding: calc(4px + (16 - 4) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(150px + (300 - 150) * ((100vw - 500px) / (1920 - 500)));
+    text-align: left;
 }
 
 /*.events, .history {
@@ -174,7 +227,7 @@ nav ul li a {
 
 }*/
 
-.trending {
+/*.trending {
     padding-top: 50px;
 }
 
@@ -200,6 +253,129 @@ nav ul li a {
     position: relative;
     top: 5px;
     margin-right: 7px;
+}*/
+
+/* Блок с поисковиком */
+
+.search-form{
+    border: 1px solid #0075FF;
+    border-radius: 30px;
+    display: inline-flex;
+    padding: 0 20px;
+    height: 50px;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0075FF5C;
+    /*position: absolute; right: 10%; margin-top: 30px; margin-right: 6%;
+*/
+}
+
+.search-form-txt{
+    font-family: 'Montserrat', 'sans-serif';
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+.search-form-but{
+    border: none;
+    background-color: transparent;
+}
+
+.search-form-img{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Блок с FaQ*/
+
+/*.faq-form {
+    border: 1px solid #0075FF;
+    border-radius: 30px;
+    display: inline-flex;
+    margin-top: 2%;
+    padding: 0 20px;
+    height: 50px;
+    width: 40%;
+}
+
+.faq-form-txt {
+    font-family: 'Montserrat', 'sans-serif';
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 22px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+.faq-form-but {
+    border: none;
+    background-color: transparent;
+}
+
+.faq-form-img {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}*/
+
+.accordion {
+    max-width: 800px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .question {
+    position: relative;
+    padding: 10px 30px;
+    background: #A3CDFF;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.accordion .contentBx .question::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .question::before {
+    content: "-";
+}
+
+.accordion .contentBx .answer {
+    position: relative;
+    background: #D9EAFF;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    border-radius: 20px;
+    margin-top: 3px;
+    /*margin-left: 50px;*/
+}
+
+.accordion .contentBx.active .answer {
+    height: 150px;
+    padding: 10px;
 }
 
 /* Блок с футером */

@@ -1,6 +1,21 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+=======
+>>>>>>> 8a037f4b84c12118c0ef3ba67ced2658295c4215
 * {
+>>>>>>> 8bcd2c943bc5de3e4ec8361bd20da8978e40b777
+=======
+body {
+    font-family: Arial, sans-serif;
+>>>>>>> parent of d555d51 (2)
     margin: 0;
     padding: 0;
 }
@@ -136,6 +151,7 @@ nav ul li a {
     font-size: 1.2em;
 }
 
+<<<<<<< HEAD
 /* Блок с новостном лентой */
 
 .events {
@@ -184,7 +200,17 @@ nav ul li a {
     text-align: left;
 }
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.events {
+=======
+>>>>>>> 8a037f4b84c12118c0ef3ba67ced2658295c4215
 /*.events, .history {
+>>>>>>> 8bcd2c943bc5de3e4ec8361bd20da8978e40b777
+=======
+.events, .history {
+>>>>>>> parent of d555d51 (2)
     display: flex;
     justify-content: center;
     padding: 20px;
